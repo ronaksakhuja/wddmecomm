@@ -2,76 +2,68 @@
 /* This class is applied to the containing div <div class="nav"> and is used to set the background color and height of the navbar */
 nav {
     background: #000;
-    height: 60px; /* set same as height & line-height below */
-  }
-  
-  /* This rule centers the nav items verticaly in the bar with the height and line height properties. Spacing between the nav items is controlled by setting right and left padding.  */
-  nav li {
+    height: 60px;
+   /* set same as height & line-height below */
+}
+/* This rule centers the nav items verticaly in the bar with the height and line height properties. Spacing between the nav items is controlled by setting right and left padding. */
+nav li {
     display: inline-block;
     list-style: none;
-    height: 60px; /* should be the same as line-height */
-    line-height: 60px; /* should be the same as height */
-    padding: 0 40px; /* "0" sets top and bottom padding to none */
-  }
-  
-  /* :hover allows you change the background color of the nav items when you mouse over them. Play around with the transition value to change the speed of the hover transition. */
-  nav li:hover {
+    height: 60px;
+   /* should be the same as line-height */
+    line-height: 60px;
+   /* should be the same as height */
+    padding: 0 40px;
+   /* "0" sets top and bottom padding to none */
+}
+/* :hover allows you change the background color of the nav items when you mouse over them. Play around with the transition value to change the speed of the hover transition. */
+nav li:hover {
     background: red;
     transition: background .3s;
-  }
-  
-  /* This rule is applied to the link <a> tag. It lets you turn off the link underline and set the link text color. */
-  .nav-link {
+}
+/* This rule is applied to the link <a> tag. It lets you turn off the link underline and set the link text color. */
+.nav-link {
     color: #fff;
     text-decoration: none;
-  }
-
+}
 body {
     padding: 40px 0;
-  }
-  
-  .grid {
+}
+.grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     grid-gap: 20px;
     align-items: stretch;
-  }
-  
-  .grid > article {
+}
+.grid > article {
     border: 1px solid #ccc;
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
-  }
-  
-  .grid > article img {
+}
+.grid > article img {
     max-width: 100%;
-  }
-  
-  .grid .text {
+}
+.grid .text {
     padding: 20px;
-  }
+}
 .addcarttext {
     display: inline;
-}  
-
+}
 /* checkout grid */
 .checkout-grid {
     display: grid;
     grid-template-columns: 1;
     align-items: stretch;
-  }
-  
-  .checkout-grid > article {
+}
+.checkout-grid > article {
     border: 1px solid #ccc;
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
-  }
-  
-  .checkout-grid > article img {
+}
+.checkout-grid > article img {
     max-width: 20%;
     padding: 1em;
-  }
-  
-  .checkout-grid .text {
+}
+.checkout-grid .text {
     padding-left: 20px;
     display: inline-grid;
     position: absolute;
-  }
+}
