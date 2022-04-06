@@ -11,11 +11,11 @@ function Nav() {
         <nav>
             <ul>
                 <li>
-                    <Link to="/">Products</Link>
+                    <Link to="/" className="nav-link">Products</Link>
                 </li>
 
                 <li>
-                    <Link to="/checkout">
+                    <Link to="/checkout" className="nav-link">
                         <div className="cart">
                             <AiFillShopping />
                             <span>{items.length}</span>
